@@ -1,0 +1,43 @@
+body{
+  background-image: url("file:///C:/Users/user/Desktop/main/back.jpg");
+
+}
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+ 
+}
+.gameCard {
+  display: flex;
+  height: 365px;
+  width: 286px;
+  border-radius: 10px;
+  background-image: url("file:///C:/Users/user/Desktop/main/bike.jpg.jpg");
+  margin-bottom: 16px;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  
+}
+.btn{
+  
+  border: 1px black solid;
+  background-color: rgb(143, 142, 148);
+  border-radius: 35px;
+  padding: 20px 30px;
+  font: 27px  sans-serif;
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+}
+
