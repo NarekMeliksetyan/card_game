@@ -14,11 +14,12 @@ container.addEventListener('click', function (evt) {
 		
 
 		if(evt.target.matches('.gameCard')) {
+			
 		  let arrayFromCollection = [...container.children];
 		  shuffle(arrayFromCollection);
 	      container.append(...arrayFromCollection);
-
-		gameCardShuffle();
+		  gameCardShuffle();
+		
 		  let iVal = evt.target.textContent;
 			if(!(count.includes(iVal))){
 				count[+iVal-1]=iVal;
@@ -36,15 +37,15 @@ container.style.transform = "rotateY(720deg)"
 function gameCardShuffle(){
 	if(container.style.transform === "rotateY(720deg)"){
 		container.style.transform = "rotateY(360deg)"
+		container.style.transition ="1s"
 	}else{container.style.transform = "rotateY(720deg)";
-	container.style.transition ="1s"
-		container.style.transition = "1s"}
+	container.style.transition = "1s"}
 		
 	}
 function drawGameEnd(){
 		let image = new Image(400, 500);
 	    image.className="center"
-		image.src = 'file:///C:/Users/user/Desktop/main/GO.jpg.png';
+		image.src = 'GO.jpg.png';
 		document.body.appendChild(image);
 		button()
 	 x=false
@@ -53,7 +54,7 @@ function drawGameEnd(){
 function winnFoo(){
 	 	let myImage = new Image(250,350);
 	 	myImage.className="center"
-	 	myImage.src ='file:///C:/Users/user/Desktop/main/winn.jpeg.jpg' ;
+	 	myImage.src ='winn.jpeg.jpg' ;
      	document.body.appendChild(myImage);
 	 	button()
 	 x=false

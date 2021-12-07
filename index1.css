@@ -1,5 +1,5 @@
 body{
-  background-image: url("file:///C:/Users/user/Desktop/main/back.jpg");
+  background-image: url("back.jpg");
 
 }
 .center {
@@ -20,7 +20,7 @@ body{
   height: 365px;
   width: 286px;
   border-radius: 10px;
-  background-image: url("file:///C:/Users/user/Desktop/main/bike.jpg.jpg");
+  background-image: url("bike.jpg.jpg");
   margin-bottom: 16px;
   justify-content: center;
   align-items: center;
