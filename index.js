@@ -73,6 +73,16 @@ function button(){
 	  document.querySelector(".center").remove();
 	  document.querySelector(".btn").remove();
 	 })
+
+	 btn.addEventListener("mouseenter", ()=>{
+		 btn.style.padding=" 30px 40px"
+		 btn.style.borderRadius="50px"
+	 })
+
+	 btn.addEventListener("mouseleave",()=>{
+		btn.style.padding=" 20px 30px"
+		btn.style.borderRadius="35px"	
+	 })
 }
 
 
